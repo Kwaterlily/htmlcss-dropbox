@@ -6,7 +6,102 @@
 }
 body{
     min-width: 1200px;
+    font-family: 'Open Sans', sans-serif;
 }
 .container{
     width: 80%;
 }
+
+.clearfix:after{
+    content: '';
+    display:table;
+    clear: both;
+}
+
+/* jumbotron     ! togliere le altezze dopo aver inserito i contenuti */
+.jumbotron{
+    width: 100%;
+    height: 80vh;      
+    background-color: #B3D0E7;
+    position: relative
+}
+.jumbotron-titolo{
+    width: 90%;
+    font-size: 3em;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+.jumbotron-container{
+    width: 25%;
+    padding-top: 0px;
+    position: absolute;
+    top: 65%;
+    left: 18%;
+    transform: translate(-50%,-50%);
+    transform-origin: top left;
+    margin-left: 0; 
+    /* background-color: lightcoral;  */
+}
+ p{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    /* background-color: aqua; */
+     
+}
+.jumbotron-container a:only-child {
+    background-color: #0160FF;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.jumbotron-left{
+    width: 55%;
+    padding-top: 0px;
+    position: absolute;
+    top: 55%;
+    right: 4%;
+    transform: translate(-5%,-15%);
+    transform-origin: top left;
+    margin-left: 0; 
+    /* background-color: rgb(128, 240, 160);  */
+}
+.jumbotron-left img{
+    width: 100%;
+}
+/* /.jumbotron */
+
+/* main-prima */
+#main-prima, .container{
+    width: 80%;
+    position: relative;
+    /* background-color: #0160FF; */
+    height: 50px;
+}
+.prima h2:only-child{
+    width: 100%;
+    font-size: 2em;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    
+}
+
+
+
+
+
+
+  
