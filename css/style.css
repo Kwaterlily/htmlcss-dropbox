@@ -1,0 +1,12 @@
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 1200px;
+}
+.container{
+    width: 80%;
+}
