@@ -230,7 +230,7 @@ main{
     width: 100%;
     padding-left: 50px;
     padding-right: 30px;
-    border: solid 2px lightslategray;
+    border: solid 1px lightgray;
     position: relative;
 }
 h3{
@@ -277,7 +277,6 @@ h3{
     -ms-flex: 1; 
     flex: 1;
 }
-
 #col{
     padding-bottom: 5vh;
     margin-left: 40px;
@@ -289,69 +288,73 @@ h3{
     padding-top: 10vh;
     padding-bottom: 5vh;
 }
-.main-settima h2{
+ h2{
     font-size: 2.2em;
 }
 /* /quarto banner */
 
 /* main-ottava */
 
-
 /* banner con quadrati */
 #main-ottava{
+    width: 100%;
     padding: 0;
 }
-#banner-quadrati{
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    width: 100%;
+#quadrati-left{
+    width: 20%;
+    height: 20%;
+    background-color: aqua;
+    display: inline;
 }
-.quadrati{
-    float: left;
-    width: calc (100% / 4); 
-}
-
-#quadrati-left svg{
-    width: 50%;
-    float: left;
+svg{
     color: white;
 }
-#quadrati-central{
-    background-color: #F5F5F5;
-    text-align: left;
-    margin: 3vw;
-    margin-bottom: 6vw;
+footer li{
+    padding-right: 5vw;
+    display: block;
+    color: white;
+    margin: 0 auto;
+    background-color: black;
+    line-height: 2em;
 }
-#quadrati-central img{
-    width: 35%;
-}
-#quadrati-right{
+footer ul {
     float: left;
-    width: calc (100% / 4);
+    padding-top: 10vh;
 }
-#quadrati-central p{
-    background-color: #F5F5F5;
+li h4{
+    padding-bottom: 3vh;
 }
-#banner-quadrati div{
-    -ms-flex: 1; 
-    flex: 1;  
+footer{
+    background-color: black;
 }
-#quadrati-left svg:nth-child(1){
-    background-color: #0160FF;
+.footer{
+    width: 70%;
+    margin: 0 auto;
+    background-color: black;
 }
-.quadrati{
-    float: left;
-    width: calc ( (100% / 4) - 40px);
-    margin: - 60px;
-    width: 0 60px;
-    background-color: brown;
+#main-nona{
+    width: 100%;
+    background-color: #B3D0E7;
+}
+.ottava{
+    width: 70%;
+    margin: 0 auto;
+    color: #61092B;
+    background-color: #B3D0E7;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.ottava h2{
+    width: 70%;
 }
 
-h2:nth-child(2){
-    width: 100%;
-    display: block;
-}
+
+
+
+
+
+
+
 
 
 
