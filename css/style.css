@@ -8,8 +8,67 @@ body{
     min-width: 1200px;
     font-family: 'Open Sans', sans-serif;
 }
+svg{
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+/* header */
+/* menu */
+.navigazione{
+    display: flex;
+    width: 100%;
+}
+.navigazione div{
+    -ms-flex: 1; 
+    flex: 1;
+}
+.menu-left{
+    width: 50%;
+    left: 0;
+}
+#logo{
+    float: left;
+}
+.menu-right{
+    width: 50%;
+    right: 0;
+    text-align:right;
+}
+li{
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+}
+.nav-right{
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 1000;
+}
+.nav-left{
+    position: fixed;
+    left: 10px;
+    z-index: 1000;
+}
+nav li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+nav li a:hover{
+    
+}
 .container{
     width: 80%;
+}
+main{
+    width: 100%;
 }
 
 .clearfix:after{
@@ -21,36 +80,42 @@ body{
 /* jumbotron     ! togliere le altezze dopo aver inserito i contenuti */
 .jumbotron{
     width: 100%;
-    height: 80vh;      
+    height: 85vh;      
     background-color: #B3D0E7;
     position: relative
 }
-.jumbotron-titolo{
-    width: 90%;
-    font-size: 3em;
-    padding-top: 55px;
+.jumbotron-titolo h1{
+    width: 80%;
+    font-size: 4em;
+    padding-top: 50px;
     padding-bottom: 50px;
     position: absolute;
-    top: 22%;
+    top: 25%;
     left: 50%;
-    transform: translate(-50%,-50%); 
+    transform: translate(-50%,-50%);
+    transform-origin: top left;
+    
 }
+
 .jumbotron-container{
     width: 25%;
     padding-top: 0px;
     position: absolute;
-    top: 65%;
-    left: 18%;
-    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 10%;
+    transform: translate(-0%,-15%);
     transform-origin: top left;
-    margin-left: 0; 
+    /* background-color: orange; */
+    margin-left: 0;
+   
     /* background-color: lightcoral;  */
 }
+
  p{
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    font-size: 18px;
+    font-size: 2vh;
     font-weight: 500;
     /* background-color: aqua; */
      
@@ -65,12 +130,17 @@ body{
     padding-left: 24px;
     padding-right: 24px;
 }
+#freccia-down{
+    font-size: 6vh;
+    position: absolute;
+    margin-top: -30px;
+}
 .jumbotron-left{
-    width: 55%;
+    width: 54%;
     padding-top: 0px;
     position: absolute;
     top: 55%;
-    right: 4%;
+    right: 6%;
     transform: translate(-5%,-15%);
     transform-origin: top left;
     margin-left: 0; 
@@ -79,25 +149,211 @@ body{
 .jumbotron-left img{
     width: 100%;
 }
-/* /.jumbotron */
 
-/* main-prima */
-#main-prima, .container{
-    width: 80%;
+.container{
+    width: 70%;
     position: relative;
-    /* background-color: #0160FF; */
-    height: 50px;
+   
+    margin: 0 auto;
+    display: flex;
 }
-.prima h2:only-child{
-    width: 100%;
-    font-size: 2em;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    position: absolute;
+
+.circle{
+    content: "";
+    border: solid 2px lightslategray;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    line-height: 10px;
+}
+.prima h2{
+    padding-top: 20vh;
+    font-size: 2.2em;
+}
+.prima p{
+    left: 0;
+    float: 1;
+}
+.circle{
+    display: inline-block;
+}
+.mensile{
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 1em;
+}
+
+/* box */
+#main-seconda{
+    padding: 0;
+}
+#box{
+    margin: 0 auto;
     text-align: center;
-    margin: auto;
+    display: flex;
+    width: 100%; 
+}
+
+.col{
+    float: left;
+    width: calc ( (100% / 3) - 40px);
+    margin: - 60px;
+    width: 0 60px;
+}
+#col-left{
+    border: solid lightgray 1px;
+    padding-bottom: 100px;
     
 }
+#col-central{
+    border: solid lightgray 1px;
+    padding-bottom: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#col-right{
+    border: solid lightgrey 1px;
+    padding-bottom: 100px;
+}
+#box div{
+    -ms-flex: 1; 
+    flex: 1;
+}
+#main-seconda span{
+    display: block;
+}
+.prima :only-child{
+    text-align: left;
+    
+}
+#banner-secondo{
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 30px;
+    border: solid 2px lightslategray;
+    position: relative;
+}
+h3{
+    display: inline;
+}
+#Contatta{
+    text-align: right;
+    display: inline;
+    right: 0;
+    padding-right: 5%;
+    position: absolute;
+}
+#img-testo img{
+    width: 100%;    
+}
+#text-right{
+    width: 80%;
+    text-align: left;
+    display: inline;
+    padding: 5%;
+}
+#main-quinta h2{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    font-size: 2.2em;
+}
+#griglia{
+    margin: 0 auto;
+    text-align: lwft;
+    display: flex;
+    width: 100%;
+}
+.griglia{
+    float: left;
+    width: calc ( (100% / 3) - 40px);
+    margin: - 60px;
+    width: 0 60px;
+}
+#main-sesta img{
+    display: block;
+    width: 100%;
+}
+#griglia div{
+    -ms-flex: 1; 
+    flex: 1;
+}
+
+#col{
+    padding-bottom: 5vh;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.main-settima {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+.main-settima h2{
+    font-size: 2.2em;
+}
+/* /quarto banner */
+
+/* main-ottava */
+
+
+/* banner con quadrati */
+#main-ottava{
+    padding: 0;
+}
+#banner-quadrati{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+.quadrati{
+    float: left;
+    width: calc (100% / 4); 
+}
+
+#quadrati-left svg{
+    width: 50%;
+    float: left;
+    color: white;
+}
+#quadrati-central{
+    background-color: #F5F5F5;
+    text-align: left;
+    margin: 3vw;
+    margin-bottom: 6vw;
+}
+#quadrati-central img{
+    width: 35%;
+}
+#quadrati-right{
+    float: left;
+    width: calc (100% / 4);
+}
+#quadrati-central p{
+    background-color: #F5F5F5;
+}
+#banner-quadrati div{
+    -ms-flex: 1; 
+    flex: 1;  
+}
+#quadrati-left svg:nth-child(1){
+    background-color: #0160FF;
+}
+.quadrati{
+    float: left;
+    width: calc ( (100% / 4) - 40px);
+    margin: - 60px;
+    width: 0 60px;
+    background-color: brown;
+}
+
+h2:nth-child(2){
+    width: 100%;
+    display: block;
+}
+
+
 
 
 
