@@ -61,8 +61,7 @@ nav li a{
     text-align: center;
     line-height: 50px;
 }
-nav li a:hover{
-    
+nav li a:hover{    
 }
 .container{
     width: 80%;
@@ -70,13 +69,11 @@ nav li a:hover{
 main{
     width: 100%;
 }
-
 .clearfix:after{
     content: '';
     display:table;
     clear: both;
 }
-
 /* jumbotron     ! togliere le altezze dopo aver inserito i contenuti */
 .jumbotron{
     width: 100%;
@@ -96,7 +93,6 @@ main{
     transform-origin: top left;
     
 }
-
 .jumbotron-container{
     width: 25%;
     padding-top: 0px;
@@ -110,15 +106,13 @@ main{
    
     /* background-color: lightcoral;  */
 }
-
- p{
+p{
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 2vh;
     font-weight: 500;
-    /* background-color: aqua; */
-     
+    /* background-color: aqua; */   
 }
 .jumbotron-container a:only-child {
     background-color: #0160FF;
@@ -149,15 +143,12 @@ main{
 .jumbotron-left img{
     width: 100%;
 }
-
 .container{
     width: 70%;
     position: relative;
-   
     margin: 0 auto;
     display: flex;
 }
-
 .circle{
     content: "";
     border: solid 2px lightslategray;
@@ -182,7 +173,6 @@ main{
     padding-right: 10px;
     font-size: 1em;
 }
-
 /* box */
 #main-seconda{
     padding: 0;
@@ -193,7 +183,6 @@ main{
     display: flex;
     width: 100%; 
 }
-
 .col{
     float: left;
     width: calc ( (100% / 3) - 40px);
@@ -202,8 +191,7 @@ main{
 }
 #col-left{
     border: solid lightgray 1px;
-    padding-bottom: 100px;
-    
+    padding-bottom: 100px;  
 }
 #col-central{
     border: solid lightgray 1px;
@@ -307,29 +295,21 @@ h3{
     display: inline;
 }
 svg{
+    width: 60%;
     color: white;
+    vertical-align:middle;
 }
-footer li{
-    padding-right: 5vw;
+ footer li{
     display: block;
     color: white;
     margin: 0 auto;
     background-color: black;
     line-height: 2em;
 }
-footer ul {
-    float: left;
-    padding-top: 10vh;
-}
 li h4{
     padding-bottom: 3vh;
 }
 footer{
-    background-color: black;
-}
-.footer{
-    width: 70%;
-    margin: 0 auto;
     background-color: black;
 }
 #main-nona{
@@ -347,7 +327,67 @@ footer{
 .ottava h2{
     width: 70%;
 }
-
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.grid{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.col-20{
+    width: 20%;
+}
+.col-33 {
+    width: 33.33%;
+}
+.col-50 {
+    width: 50%;
+}
+.col-70{
+    width: 70%;
+}
+.designit{
+    background-color: #A2D39B;
+}
+.arizona{
+    background-color: #61092B;
+}
+.florida{
+    background-color: #0093CE;
+}
+.topps{
+    background-color: #FF1B1C;
+}
+.opinions{
+    background: #F5F5F5;
+}
+.square {
+    height: 0;
+    padding-top: 50%;
+    position: relative;
+  }
+.square .inner{
+    position: absolute;
+    top: 43%;
+    left: 0;
+    right: 0;
+}
+.bicycle{
+    background-color: #D5001F;
+}
+.hearst{
+    background-color: #B3D0E7;
+}
+.lonely-planet{
+    background: #0E2381;
+}
+.clear-channel{
+    background-color: #FFD72F;
+}
 
 
 
