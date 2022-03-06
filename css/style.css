@@ -27,9 +27,6 @@ svg{
     width: 50%;
     left: 0;
 }
-#logo{
-    float: left;
-}
 .menu-right{
     width: 50%;
     right: 0;
@@ -38,9 +35,10 @@ svg{
 li{
     list-style-type: none;
 }
-ul li{
+.navigazione ul li{
     display: inline-block;
 }
+
 .nav-right{
     position: fixed;
     top: 20px;
@@ -59,7 +57,6 @@ nav li a{
     font-size: 16px;
     margin: 20px;
     text-align: center;
-    line-height: 50px;
 }
 nav li a:hover{    
 }
@@ -115,14 +112,25 @@ p{
     /* background-color: aqua; */   
 }
 .jumbotron-container a:only-child {
+    font-weight: 500;
+}
+.botton{
     background-color: #0160FF;
     color: white;
     text-decoration: none;
-    font-weight: 500;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#prova-per-30-giorni {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#text-right a:only-child{
+    border: solid 1px black;
+    color: black;
+    background-color: white;
 }
 #freccia-down{
     font-size: 6vh;
@@ -149,6 +157,14 @@ p{
     margin: 0 auto;
     display: flex;
 }
+#blu{
+    content: "";
+    border: solid 3px #1166FF;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    line-height: 10px;
+}
 .circle{
     content: "";
     border: solid 2px lightslategray;
@@ -168,6 +184,9 @@ p{
 .circle{
     display: inline-block;
 }
+.circle-mensile{
+    
+}
 .mensile{
     display: inline-block;
     padding-right: 10px;
@@ -177,21 +196,53 @@ p{
 #main-seconda{
     padding: 0;
 }
-#box{
+.box{
     margin: 0 auto;
-    text-align: center;
     display: flex;
     width: 100%; 
+}
+.titolo-tabella{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: solid 1px lightgrey;
+}
+hr{
+    width: 20%;
+    border: 1px solid #D3D3D3;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 .col{
     float: left;
     width: calc ( (100% / 3) - 40px);
     margin: - 60px;
     width: 0 60px;
+    font-size: 14px;
+}
+.margin-colonne{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#col-central ul li{
+    margin-top: 5px;
+}
+.bullet{
+    display: inline-block;
+    margin-right: 5px;
+    color: #1166FF;
+}
+.blue-link  a{
+    color: #1166FF;
+}
+.funzioni{
+    width: 100%;
 }
 #col-left{
     border: solid lightgray 1px;
-    padding-bottom: 100px;  
+    padding-bottom: 100px;   
 }
 #col-central{
     border: solid lightgray 1px;
@@ -199,36 +250,54 @@ p{
     margin-left: 40px;
     margin-right: 40px;
 }
+.prima h3,span{
+    display: block;
+    margin-top: 1em;
+}
 #col-right{
     border: solid lightgrey 1px;
-    padding-bottom: 100px;
+    padding-bottom: 100px;  
 }
 #box div{
     -ms-flex: 1; 
     flex: 1;
 }
-#main-seconda span{
-    display: block;
+#main-seconda {
+    margin-top: 5vh;
 }
+
 .prima :only-child{
-    text-align: left;
-    
+    text-align: left;  
 }
 #banner-secondo{
     width: 100%;
-    padding-left: 50px;
+    padding-left: 30px;
     padding-right: 30px;
     border: solid 1px lightgray;
     position: relative;
+    
+}
+.margin-banner{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 h3{
     display: inline;
+    font-size: 1.5em;
+}
+#banner-secondo h3{
+    padding-bottom: 1em;
+}
+#banner-secondo h4 {
+    margin-top: 1em;
 }
 #Contatta{
     text-align: right;
     display: inline;
+    top: 70px;
     right: 0;
     padding-right: 5%;
+    font-size: 0.8em;
     position: absolute;
 }
 #img-testo img{
@@ -295,7 +364,7 @@ h3{
     display: inline;
 }
 svg{
-    width: 60%;
+    width: 50%;
     color: white;
     vertical-align:middle;
 }
@@ -306,15 +375,45 @@ svg{
     background-color: black;
     line-height: 2em;
 }
-li h4{
-    padding-bottom: 3vh;
-}
 footer{
     background-color: black;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    font-size: 13px;
+}
+#footer-line{
+    width: 100%;
+    border: 1px solid #D3D3D3;
+    margin-top: 10vh;
+   
+}
+#language{
+    color: #505050;
+    display: block;
+}
+.seconda .terza .quarta .quinta{
+    margin-right: 20vw;
+}
+li h4{
+    padding-bottom: 3vh;
 }
 #main-nona{
     width: 100%;
     background-color: #B3D0E7;
+    position: relative;
+}
+#inizia{
+    text-align: right;
+    display: inline;
+    top: 80px;
+    right: 200px;
+    padding-right: 5%;
+    font-size: 0.8em;
+    position: absolute;
+}
+#inizia .botton {
+    color: black;
+    background-color: white;
 }
 .ottava{
     width: 70%;
@@ -325,7 +424,27 @@ footer{
     padding-bottom: 10vh;
 }
 .ottava h2{
+    width: 60%;
+}
+#quadrato-grigio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    background-color: #F5F5F5;
+    z-index: 1000;
+    width: 33%;
+}
+#designit-centrale{
+    justify-content: left;
     width: 70%;
+    margin-left: -50px;
+}
+#opinions{
+    align-self: flex-end;
+    align-self: center;
+    margin: 2vw;
 }
 .text-center{
     text-align: center;
@@ -362,17 +481,15 @@ footer{
 .topps{
     background-color: #FF1B1C;
 }
-.opinions{
-    background: #F5F5F5;
-}
 .square {
     height: 0;
     padding-top: 50%;
     position: relative;
-  }
+}
+
 .square .inner{
     position: absolute;
-    top: 43%;
+    top: 30%;
     left: 0;
     right: 0;
 }
